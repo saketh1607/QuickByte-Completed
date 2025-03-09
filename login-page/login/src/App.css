@@ -1,0 +1,128 @@
+/* App.css */
+body {
+  background-image: url('https://wallpaperaccess.com/full/9490515.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.navbar-brand h1 {
+  color: #1a00ae;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.home-container {
+  text-align: center;
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.auth-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: 2px solid #0056b3;
+}
+.btn-primary:hover {
+  background-color: #5a6268;
+}
+
+
+.btn-admin {
+  background-color: #007bff;
+  border: 2px solid #5a6268;
+}
+
+.btn-admin:hover {
+  background-color: #5a6268;
+}
+
+.auth-container {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+.admin-auth {
+  background-color: rgba(248, 249, 250, 0.95);
+  border: 3px solid #6c757d;
+}
+
+.auth-form h2 {
+  color: #1a00ae;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #495057;
+  font-weight: 500;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ced4da;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-login {
+  background-color: #28a745;
+}
+
+.btn-register {
+  background-color: #17a2b8;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand h1 {
+    font-size: 2rem;
+  }
+  
+  .auth-options {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .auth-container {
+    margin: 30px 15px;
+    padding: 25px;
+  }
+}

@@ -1,0 +1,84 @@
+.order-list {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+canvas {
+  will-read-frequently: true;
+}
+
+.order-item {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.qr-scanner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+.time-slot-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.time-slot-group {
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.time-slot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+/* QR Scanner Modal */
+.MuiDialog-paper {
+  padding: 20px;
+  border-radius: 12px !important;
+}
+.time-slot-list {
+  padding: 20px;
+}
+
+.refresh-button {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: underline;
+}
+.time-slot-list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.MuiListItem-secondaryAction {
+  padding-right: 90px; /* Space for camera icon */
+}
+
+.MuiListItemText-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
