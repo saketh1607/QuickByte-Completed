@@ -13,15 +13,18 @@
     "@emotion/babel-plugin": "^11.13.5",
     "@mui/icons-material": "^6.4.5",
     "@mui/material": "^6.4.5",
+    "@mui/x-data-grid": "^7.28.3",
     "@yudiel/react-qr-scanner": "^2.2.1",
-    "axios": "^1.7.9",
+    "axios": "^1.8.4",
+    "date-fns": "^4.1.0",
     "file-saver": "^2.0.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-qr-reader": "^3.0.0-beta-1",
     "react-qr-scanner": "^1.0.0-alpha.11",
     "react-router-dom": "^7.2.0",
-    "react-webcam": "^7.2.0"
+    "react-webcam": "^7.2.0",
+    "recharts": "^2.15.2"
   },
   "devDependencies": {
     "@emotion/react": "^11.14.0",

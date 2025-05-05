@@ -1,0 +1,121 @@
+/* Chefs Section */
+.chefs-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+/* Chefs Grid */
+.chefs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Chef Card */
+.chef-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.chef-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Chef Image */
+.chef-image {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.chef-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.chef-card:hover .chef-image img {
+    transform: scale(1.1);
+}
+
+.chef-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.chef-card:hover .chef-overlay {
+    opacity: 1;
+}
+
+.chef-overlay h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.chef-overlay .specialty {
+    color: #FF6F00;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Chef Info */
+.chef-info {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.experience {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #FF6F00;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #E65C00;
+    transform: translateY(-3px);
+}

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 .nutrition-btn {
   background-color: #4CAF50;
@@ -105,6 +106,7 @@ body {
   background-color: #f9f9f9;
   color: #333;
   scroll-behavior: smooth;
+  
 }
 
 .container {
@@ -237,10 +239,13 @@ nav {
   margin-right: 20px;
   cursor: pointer;
   color: #ff6f00;
+   
+  margin-top: 2px;
 }
 
 .cart i {
   font-size: 24px;
+ 
 }
 
 .cart-count {

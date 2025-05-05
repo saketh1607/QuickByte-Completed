@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container footer-container">
                 <div className="footer-column">
                     <h3>QuickBite Campus</h3>
-                    <p>Your go-to platform for quick and delicious meals on campus.</p>
+                    <p>Your go-to platform for quick and delicious meals on <b>VNRVJIET</b> campus.</p>
                 </div>
                 <div className="footer-column">
                     <h3>Links</h3>
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; 2023 QuickBite Campus. All rights reserved.</p>
+                <p>&copy; 2025 QuickBite Campus. All rights reserved.</p>
             </div>
         </footer>
     );

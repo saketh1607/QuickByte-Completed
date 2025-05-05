@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 const Navbar = ({ onSearch, onFilterChange, cartCount, onCartClick }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [toggle, setToggle] = useState('canteen');
@@ -28,7 +27,7 @@ const Navbar = ({ onSearch, onFilterChange, cartCount, onCartClick }) => {
 
   return (
     <nav style={{
-      transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
+      // transform: isVisible ? 'translateY(0)' : 'translateY(-100%)',
       transition: 'transform 0.4s ease-in-out',
       position: 'fixed',
       top: 0,
@@ -42,7 +41,7 @@ const Navbar = ({ onSearch, onFilterChange, cartCount, onCartClick }) => {
           <a href="#"><i className="fas fa-utensils"></i> QuickBite Campus</a>
         </div>
 
-        <div className="toggle-container">
+        {/* <div className="toggle-container">
           <span>Stationary</span>
           <input
             type="radio"
@@ -59,7 +58,7 @@ const Navbar = ({ onSearch, onFilterChange, cartCount, onCartClick }) => {
             onChange={handleToggle}
           />
           <span>Canteen</span>
-        </div>
+        </div> */}
 
         <div className="search-bar">
           <i className="fas fa-search"></i>

@@ -95,7 +95,7 @@ const CartPage = ({ cartItems, removeFromCart }) => {
 
   return (
     <div className="cart-page container py-5">
-      <h1 className="mb-4">Your Cart</h1>
+      <h1 className=" m-4 mb-4">Your Cart</h1>
       {cartItems.length === 0 ? (
         <div className="text-center">
           <p>Your cart is empty.</p>

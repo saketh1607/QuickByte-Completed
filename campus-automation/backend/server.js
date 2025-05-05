@@ -41,6 +41,53 @@ app.get('/health', (req, res) => res.status(200).send('OK'));
 
 const router = express.Router();
 
+// New endpoint for analytics data
+router.get('/analytics', async (req, res) => {
+  try {
+    const orders = await Order.find();
+
+    const slotCounts = {};
+    orders.forEach(order => {
+      const slot = `${order.timeSlot.from}-${order.timeSlot.to}`;
+      slotCounts[slot] = (slotCounts[slot] || 0) + 1;
+    });
+
+    const hourlyProfit = {};
+    orders.forEach(order => {
+      const hour = new Date(order.createdAt).getHours();
+      hourlyProfit[hour] = (hourlyProfit[hour] || 0) + order.totalAmount;
+    });
+
+    // Optional: get top-selling items manually here
+    const itemCounts = {};
+    orders.forEach(order => {
+      order.items.forEach(item => {
+        if (!itemCounts[item.name]) {
+          itemCounts[item.name] = {
+            name: item.name,
+            quantity: 0,
+            totalAmount: 0
+          };
+        }
+        itemCounts[item.name].quantity += item.quantity;
+        itemCounts[item.name].totalAmount += item.price * item.quantity;
+      });
+    });
+
+    const mostSoldItems = Object.values(itemCounts)
+      .sort((a, b) => b.quantity - a.quantity)
+      .slice(0, 5);
+
+    res.status(200).json({
+      timeSlotData: Object.keys(slotCounts).map(slot => ({ slot, orders: slotCounts[slot] })),
+      hourlyProfit: Object.keys(hourlyProfit).map(hour => ({ hour, profit: hourlyProfit[hour] })),
+      mostSoldItems
+    });
+  } catch (error) {
+    console.error('[ANALYTICS ERROR]', error.message);
+    res.status(500).json({ error: 'Failed to fetch analytics' });
+  }
+});
 
 router.get('/orders', async (req, res) => {
   try {

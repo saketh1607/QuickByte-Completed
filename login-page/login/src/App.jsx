@@ -21,12 +21,12 @@ function App() {
 
   return (
     <Router>
-      <div className="app-container">
+      <div className="app-container ">
         <nav className="navbar navbar-default">
           <div className="container-fluid">
             <div className="navbar-header">
               <Link className="navbar-brand" to="/">
-                <h1>QuickByte & QuickStore</h1>
+                <h1>QuickByte Vnr</h1>
               </Link>
             </div>
             <div className="navbar-collapse collapse">

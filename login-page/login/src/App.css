@@ -1,6 +1,7 @@
 /* App.css */
 body {
   background-image: url('https://wallpaperaccess.com/full/9490515.jpg');
+  /* background-image: url('https://t4.ftcdn.net/jpg/03/85/46/49/360_F_385464930_kBzwHZyTpIIlHYc9M3KtTy62rLn4KrCu.jpg'); */
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -12,12 +13,15 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+
+  
 }
 
 .navbar-brand h1 {
   color: #1a00ae;
   margin: 0;
   font-size: 2.5rem;
+  
 }
 
 .home-container {

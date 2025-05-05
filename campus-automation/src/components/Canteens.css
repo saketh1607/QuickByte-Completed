@@ -1,0 +1,134 @@
+/* Canteens Section */
+.canteens-section {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #2d2d2d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+/* Canteens Grid */
+.canteens-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Canteen Card */
+.canteen-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.canteen-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* Canteen Image */
+.canteen-image {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.canteen-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.canteen-card:hover .canteen-image img {
+    transform: scale(1.1);
+}
+
+.canteen-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.canteen-card:hover .canteen-overlay {
+    opacity: 1;
+}
+
+.canteen-overlay h3 {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.canteen-overlay .description {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Canteen Info */
+.canteen-info {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.stars {
+    color: #FFC107;
+    font-size: 1rem;
+}
+
+.rating-value {
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.visit-btn {
+    background: #FF6F00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.visit-btn:hover {
+    background: #E65C00;
+    transform: scale(1.05);
+}
