@@ -39,5 +39,4 @@ Contact me:saketh1607@gmail.com
 
 ---
 
-## 📁 Project Structure
 
