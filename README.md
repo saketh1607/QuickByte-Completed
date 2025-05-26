@@ -33,9 +33,9 @@ Contact me:saketh1607@gmail.com
 
 | Frontend        | Backend         | Database    | Other Features            |
 |-----------------|-----------------|-------------|---------------------------|
-| React.js        | Node.js + Express.js | MongoDB     | Gemini AI integration (optional) |
+| React.js        | Node.js + Express.js | MongoDB     | Gemini AI integration  |
 | Tailwind CSS    | REST APIs       | Mongoose ORM| Chart.js / Recharts       |
-| React Router    |                 |             | Google Maps (Optional)    |
+| React Router    |                 |             |   |
 
 ---
 
